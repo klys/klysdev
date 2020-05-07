@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "name": "Home"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "subdescription": {
+      "type": "string"
+    },
+    "subdescription2": {
+      "type": "string"
+    }
+  }
+}
