@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_opinion_opinions",
+  "info": {
+    "name": "Opinion",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "Like": {
+      "type": "boolean"
+    }
+  }
+}

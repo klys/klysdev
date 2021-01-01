@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certifications",
+  "info": {
+    "name": "Certifications"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "string"
+    },
+    "organization_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Date_Issued": {
+      "type": "string"
+    },
+    "Credential_ID": {
+      "type": "string"
+    },
+    "Credential_URL": {
+      "type": "string"
+    }
+  }
+}

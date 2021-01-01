@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "histories",
+  "info": {
+    "name": "History"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "post": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

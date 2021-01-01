@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "post_comments",
+  "info": {
+    "name": "PostComments"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Website": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "richtext",
+      "required": true
+    },
+    "post": {
+      "model": "post"
+    }
+  }
+}

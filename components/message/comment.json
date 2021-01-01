@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_message_comments",
+  "info": {
+    "name": "Comment",
+    "icon": "comment-alt"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    },
+    "Owner": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

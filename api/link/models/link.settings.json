@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "links",
+  "info": {
+    "name": "Link"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "URL": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "project": {
+      "via": "links",
+      "model": "project"
+    }
+  }
+}
