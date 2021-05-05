@@ -81,8 +81,8 @@
       "default": "Prototype"
     },
     "people": {
-      "collection": "people",
       "via": "projects",
+      "collection": "people",
       "dominant": true
     }
   }

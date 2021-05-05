@@ -1,33 +1,30 @@
 {
   "kind": "collectionType",
-  "collectionName": "people",
+  "collectionName": "skill_sets",
   "info": {
-    "name": "People"
+    "name": "Skill-set"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "name": {
+    "Name": {
       "type": "string"
     },
-    "picture": {
+    "Level": {
+      "type": "integer"
+    },
+    "Logo": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos"
       ],
       "plugin": "upload",
       "required": false
-    },
-    "projects": {
-      "collection": "project",
-      "via": "people"
-    },
-    "profile_link": {
-      "type": "string",
-      "default": "https://klys.dev/people"
     }
   }
 }
